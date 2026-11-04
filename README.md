@@ -17,6 +17,19 @@ I also practiced managing the Terraform workflow, from initialization and execut
 - **Instance Type:** t3.micro
 - **AWS Region:** Asia Pacific (Sydney) — `ap-southeast-2`
 
+## AWS IAM User & Permissions
+
+Used a dedicated **AWS IAM User** to authenticate Terraform with AWS. Attached the following managed policies to support current and future AWS projects:
+
+- `AmazonEC2FullAccess`
+- `AmazonRDSFullAccess`
+- `IAMFullAccess`
+- `AmazonS3FullAccess`
+- `AmazonDynamoDBFullAccess`
+- `AmazonRoute53FullAccess`
+
+**Note:** These permissions were configured for learning and future hands-on projects. Production environments should follow the Principle of Least Privilege.
+
 ## Project Architecture
 
 The project provisions the following AWS resource:
@@ -34,7 +47,10 @@ The project provisions the following AWS resource:
 ```text
 terraform-ec2-project/
 │
-└── main.tf
+├── main.tf
+├── .terraform.lock.hcl
+├── .gitignore
+└── README.md
 ```
 
 ## Terraform Configuration
