@@ -148,7 +148,7 @@ Terraform identifies the resources it manages and destroys them after confirmati
 
 This helps avoid unnecessary AWS resource charges.
 
-n What I Learned
+ What I Learned
 
 Through this hands-oproject, I gained practical experience with:
 
@@ -169,7 +169,7 @@ Through this hands-oproject, I gained practical experience with:
 - AWS resources may incur charges while they are running.
 - The infrastructure was destroyed after successful testing.
 
-## Author
+## Project Author
 
 **Vineet Vikram Rao**
 
